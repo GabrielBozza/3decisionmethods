@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang = "pt-BR"> 
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <title>3DM</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/3dm_icon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <script>
+    document.body.style.zoom = (window.screen.width/1536);
+  </script>
+  
+  <div class="topnav">
+	  <button onclick="window.location.href='index.html'" style="float:left;height:60px;font-size:25px;background-color:#01346ec2;"><i class="fa fa-fw fa-home"></i></button>
+    <img src="img/3dm-transparent.png" style="margin:5px 10px;width:70px;height:50px;border-radius:5px;border:1px solid white;margin-left:4%;">
+    <img src="img/UK_flag.png" onclick="setLanguage('en')" style="margin:10px 10px;width:58px;height:40px;float:right;border-radius:5px;cursor:pointer;">
+    <img src="img/Brazil_flag.jpg" onclick="setLanguage('pt-br')" style="margin:10px 0px;width:60px;height:40px;float:right;border-radius:5px;cursor:pointer;">
+  </div>
+<div id ="indexBody2" style="text-align:center;">
+<button class="AboutUs" style="float:left;"  onclick = "window.location.href='/3DM/AboutUs.html'">  
+    <text class='lang'>Sobre nós</text>
+</button>
+<h2 style="font-size:30px;float:left;margin-left:25%;" class="lang">Métodos de apoio à decisão</h2>
+    <div class="dropdown" style="float:right;">
+      <button class="dropbtn">  
+        <text class='lang'>Tutoriais</text>
+      </button>
+      <div class="dropdown-content">
+        <a href="/3DM/TutorialAHP.html" id="AHPTutorialBtn">AHP</a>
+        <a href="/3DM/TutorialTOPSIS.html" id="TOPSISTutorialBtn">TOPSIS</a>
+        <a href="/3DM/TutorialAHP_TOPSIS_2N.html" id="AHP_TOPSIS_2NTutorialBtn">AHP-TOPSIS-2N</a>
+        <a href="/3DM/References.html" ><text class='lang'>Leitura complementar</text></a>
+      </div>
+    </div> 
+</div>
+
+<div id ="indexBody" style="border-radius:0px 0px 5px 5px;margin-bottom:10px;height:483px;">
+<div id="methodButtons">
+<button class = "method" onclick = "window.location.href='/3DM/AHP.html'">AHP</button>
+<button class = "method" onclick = "window.location.href='/3DM/TOPSIS.html'">TOPSIS</button>
+<button class = "method" onclick = "window.location.href='/3DM/AHP_TOPSIS_2N.html'">AHP-TOPSIS-2N</button> 
+</div>
+</div>
+
+<div id="footer" style="text-align:center;clear:both; width:100%; height:90px; margin:0px;"> <!--mudei aqui-->
+<img src="img/Logo_CASNAV.png" style="width:3%;margin:20px;margin-top:10px;margin-bottom:0px;float:left;">
+<div style="text-align:center;color:white;font-size:12px;margin-top:18px;margin-bottom:10px;margin-left:7%;float:left;width:70%;">
+"<text class='lang'>Todos os direitos reservados. O uso não comercial (acadêmico) deste software é gratuito.</text><br> 
+<text class='lang'>A única coisa que se pede em troca é citar este software quando os resultados são usados em publicações</text> ".<br>
+<text class='lang'>Para citar o software:</text> BOZZA, Gabriel; RUY, Milena Mayara; SANTOS, Marcos dos; MOREIRA, Miguel Ângelo Lellis; ROCHA JUNIOR, Claudio de Souza; GOMES, Carlos Francisco Simões;<br>
+Three Decision Methods (3DM) Software Web (v.1). 2020.</div>
+<img src="img/Logo_IME.png" style="width:3%;margin:20px;margin-top:15px;margin-bottom:0px;float:right;">
+</div>
+
+  <script src = "scriptIndex.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,546 @@
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+table{
+    font-size:18px;
+    padding:10px;
+    margin:10px;
+    border-collapse: separate;
+    border-spacing: 3px 7px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+th, td,tr {
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+tr:nth-child(even) {background-color: #aac3df3b;}
+
+#regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    font-family: Raleway;
+    padding: 40px;
+    width: 85%;
+    min-width: 300px;
+    min-height: 400px;
+    border-radius: 5px;
+}
+
+#indexBody {
+    background-color: #ffffff;
+    margin: 100px auto;
+    font-family: Raleway;
+    padding: 200px 200px;
+    height: 520px;
+    width: 85%;
+    margin-top: 0px;
+    min-width: 300px;
+    border-radius: 5px;
+}
+
+#indexBody2 {
+    background-color: #ffffff;
+    margin: 100px auto;
+    font-family: Raleway;
+    padding: 10px 15px;
+    margin-bottom: 0px;
+    height: 30px;
+    width: 85%;
+    min-width: 300px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.method{
+    height: 120px;
+    width: 29%;
+    padding: 5% 0px;
+    font-size: 25px;
+    margin-left: 3%;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+}
+
+/* Mark input boxes that gets an error on validation: */
+
+input.invalid {
+    background-color: #ffdddd;
+    border: 1px solid #fd0000;
+    border-radius: 5px;
+}
+
+select {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+}
+
+/* Hide all steps by default: */
+
+.tab {
+    display: none;
+}
+
+button {
+    background-color: #01346ec2;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:focus {
+    outline: none;
+}
+
+#prevBtn {
+    background-color: #bbbbbb;
+    border-radius: 5px;
+}
+
+#MoreAlternatives, #MoreQuant, #MoreQualit{
+    background-color: #ffffff;
+    color: #01346e;
+    border: 2px solid #01346e;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+#MORE_INFO{
+    background-color: #ffffff;
+    color: #01346e;
+    border: 2px solid #01346e;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+#MORE_INFO:hover {
+    background-color: #01346e;
+    color: #ffffff;
+    border: 2px solid #01346e;
+}
+
+#MoreAlternatives:hover {
+    background-color: #01346e;
+    color: #ffffff;
+    border: 2px solid #01346e;
+}
+
+#MoreQuant:hover {
+    background-color: #01346e;
+    color: #ffffff;
+    border: 2px solid #01346e;
+}
+
+#MoreQualit:hover {
+    background-color: #01346e;
+    color: #ffffff;
+    border: 2px solid #01346e;
+}
+
+#RemoveItem, #RemoveItem2, #RemoveItem3   {
+    background-color: #ffffff;
+    color: #ce0606;
+    border: 2px solid #ce0606;
+    font-weight: 600;
+}
+
+#RemoveItem:hover {
+    background-color: #ce0606;
+    color: #ffffff;
+    font-weight: 600;
+    border: 2px solid #ce0606;
+}
+
+#RemoveItem2:hover {
+    background-color: #ce0606;
+    color: #ffffff;
+    font-weight: 600;
+    border: 2px solid #ce0606;
+}
+
+#RemoveItem3:hover {
+    background-color: #ce0606;
+    color: #ffffff;
+    font-weight: 600;
+    border: 2px solid #ce0606;
+}
+
+/* Make circles that indicate the steps of the form: */
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+
+.step.finish {
+    background-color: rgba(1, 52, 110, 0.76);
+}
+
+.topnav {
+    background-color: #01346ec2;
+    position: fixed;
+    backdrop-filter: blur(7px);
+    top: 5px;
+    width: 99%;
+    height: 60px;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 3;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input, label {
+    display: block;
+}
+
+input[type=range] {
+    margin: 30px 0px;
+    display: inline;
+    padding: 0px;
+}
+
+.range-wrap {
+    position: relative;
+    float: right;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 150px;
+    /*width: 450px;*/
+    display: inline-flex;
+    /*adicionado*/
+}
+
+/*começa*/
+
+.range-wrap .value {
+    position: absolute;
+    font-size: 14px;
+    font-weight: 800;
+    color: #01346e;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.range-wrap .value.right {
+    right: -15px;
+    transform: translateY(170%);
+}
+
+.range-wrap .value.left {
+    left: -18px;
+    transform: translateY(170%);
+}
+
+/*termina*/
+
+.range {
+    width: 250px;
+    -webkit-appearance: none;
+    height: 12px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #FE0002,#D80027,#A1015D,#63009E,#2A00D5,#0302FC);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.bubble {
+    background: #01346e;
+    color: white;
+    padding: 4px 12px;
+    margin-top: -10px;
+    position: absolute;
+    border-radius: 20px;
+    left: 50%;
+    transform: translateX(-51%);
+}
+
+.bubble::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #01346e transparent transparent transparent;
+  }
+
+.range:hover {
+    opacity: 1;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #e7e7e7;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.range::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #e7e7e7;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.tooltip {
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 490px;
+    background-color: rgba(124, 124, 124, 0.959);
+    border-radius: 5px;
+    padding: 8px 8px 8px 8px;
+    text-align: left;
+    margin-right: 8px;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 105%;
+    /*bottom: 125%;
+    left: 50%;*/
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    margin-top: 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgba(124, 124, 124, 0.959);
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip .tooltiptext2 {
+    visibility: hidden;
+    width: 150px;
+    background-color: rgba(124, 124, 124, 0.959);
+    border-radius: 5px;
+    padding: 8px 8px 8px 8px;
+    text-align: left;
+    margin-right: 8px;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    /* right: 105%; */
+    /* bottom: 125%; */
+    left: 105%;
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext2::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 100%;
+    margin-top: 8px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent  rgba(124, 124, 124, 0.959) transparent transparent;
+}
+
+.tooltip:hover .tooltiptext2 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown {
+    float: right;
+  }
+  
+  .dropdown .dropbtn,.AboutUs {
+    font-size: 18px;  
+    border-radius: 5px;
+    border: 3px solid #45619c;
+    color: #45619c;
+    padding: 14px 16px;
+    background-color: white;
+    font-family: inherit;
+    height: 60px;
+  }
+  
+ .dropdown:hover .dropbtn {
+    background-color: #45619c;
+    border-radius: 5px;
+    border: 3px solid #45619c;
+    color:white;
+    cursor: pointer;
+  }
+  
+.AboutUs:hover {
+    background-color: #45619c;
+    border-radius: 5px;
+    border: 3px solid #45619c;
+    color:white;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+  }
+  
+  .dropdown-content a {
+    margin-top: 0px;
+    z-index: 3;
+    float: none;
+    color:white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    margin-top: -6px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 5px;
+    height: auto;
+    display: block;
+  }
+
+  #footer{
+    background-color: #01346ec2;
+    /* height: 90px; */
+    position: relative;
+    padding: 0px;
+    bottom: 0px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  
+  .geral_form {
+    top: 10%;
+    width: 100%;
+    left: 0%;
+    height: 90%;
+    margin-bottom: 0px;
+    text-align: center;
+    overflow-y: scroll;
+    position: absolute;
+
+}
+
+.box_artigos {
+
+    position: relative;
+    top: 5%;
+    float: left;
+    left: 10%;
+    padding: 10px 10px;
+    width: 80%;
+    border: solid #b3b3b3 0px;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    background: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+
+}
+
+
+
+.titulo_artigo {
+    font-size: 25px;
+    position: relative;
+    width: 70%;
+    float: left;
+    left: 15%;
+    color: #404040;
+    text-shadow: 0.5px 0px #696969;
+}
+
+.resumo {
+    font-size: 15px;
+    position: relative;
+    width: 90%;
+    float: left;
+    left: 5%;
+    color: #404040;
+    text-shadow: 0.5px 0px #696969;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.bt_artigo {
+
+    position: absolute;
+    float: right;
+    right: 3%;
+    top: 8%;
+}

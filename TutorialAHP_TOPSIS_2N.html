@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang = "pt-BR">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<title>Tutorial AHP-TOPSIS-2N</title>
+<link rel="icon" href="img/3dm_icon.ico" type="image/x-icon">
+<link rel="stylesheet" href="styleTutorials.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+
+  <script>
+    document.body.style.zoom = (window.screen.width/1536);
+  </script>
+
+  <div class="topnav">
+	  <button onclick="window.location.href='/3DM/index.html'" style="float:left;height:60px;font-size:25px;background-color:#01346ec2;"><i class="fa fa-fw fa-home"></i></button>
+    <h2 style="font-family:Raleway;color:white;float:left;margin-left:38%;">Tutorial AHP-TOPSIS-2N</h2>
+    <img src="img/3dm-transparent.png" style="margin:5px 10px;width:70px;height:50px;border-radius:5px;border:1px solid white;float:right;">
+  </div>
+
+  <div id="TutorialBody">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 13</div>
+  	<text style="text-align:justify;font-size:20px;line-height:1.8;">
+    <br>● O Método AHP-TOPSIS-2N é indicado para:<br>
+    <div style="padding-left:5em">○ Tomada de decisão que leve em conta aspectos subjetivos, cujas medidas são mais complexas, 
+    por serem de caráter pessoal e difíceis de externalizar na escolha de prioridades entre os critérios 
+    (diminuem ou aumentam monotonicamente).</div>
+    <div style="padding-left:5em">○ Casos com muitas alternativas, já que não tem limitação nesse campo.</div><br>
+    <i>Obs.: Utiliza apenas critérios quantitativos há limitação de 15 critérios para possibilitar os cálculos de
+    consistência do método. Vale lembrar que a tolerância de inconsistências não é uma limitação, mas sim um 
+    retrato da realidade.</i>
+    </text>
+    </div>
+
+    <div class="mySlides fade">
+  <div class="numbertext">2 / 13</div>
+  <text style="text-align:justify;font-size:20px;line-height:1.8;">
+    <br>● Saiba mais sobre o Método AHP-TOPSIS-2N:<br>
+    <div style="padding-left:5em">○ Baseia-se nos métodos AHP e TOPSIS, utilizando duas normalizações diferentes (veja mais em 
+    <a href="/3DM/References.html" style="color: #01346ec2;cursor:pointer;">material de
+    leitura complementar</a>), que geram dois resultados.</div>
+    <div style="padding-left:5em">○ Técnica de avaliação de performances de alternativas através da similaridade da mesma com uma solução
+    ideal e também levando em conta a avaliação dos critérios segundo a Escala de Saaty pelos responsáveis 
+    pelas decisões. De acordo com essa técnica a melhor alternativa é aquela mais próxima da solução ideal e
+    mais distante da solução não ideal.</div>
+    ● Encontre, a seguir, um vídeo explicativo sobre o método AHP-TOPSIS-2N
+    </text>
+    
+    <a href="https://www.youtube.com/watch?v=h5aL0M1HB38"  target="_blank" style="width:100%;cursor:pointer;margin-left:240px;"><img src="img/thumbnail_ahp.png" style="width:50%;cursor:pointer;text-align:center;"></a>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 13</div>
+  	<img src="img/AHP_TOPSIS_2N1.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 13</div>
+  	<img src="img/AHP_TOPSIS_2N2.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 13</div>
+  	<img src="img/AHP_TOPSIS_2N3.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 13</div>
+  	<img src="img/AHP_TOPSIS_2N4.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 13</div>
+  	<img src="img/AHP_TOPSIS_2N5.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 13</div>
+  	<img src="img/AHP_TOPSIS_2N6.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 13</div>
+  	<img src="img/AHP_TOPSIS_2N7.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">10 / 13</div>
+  	<img src="img/AHP_TOPSIS_2N8.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">11 / 13</div>
+  	<img src="img/AHP_TOPSIS_2N9.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">12 / 13</div>
+  	<img src="img/AHP_TOPSIS_2N10.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">13 / 13</div>
+  	<img src="img/AHP_TOPSIS_2N11.png" style="width:100%">
+</div>
+
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span> 
+  <span class="dot" onclick="currentSlide(11)"></span> 
+  <span class="dot" onclick="currentSlide(12)"></span> 
+  <span class="dot" onclick="currentSlide(13)"></span> 
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+scroll(0,0);
+
+function plusSlides(n) {
+  	if(slideIndex == 13 && n==1){
+		FinishTutorialDialog();
+		showSlides(slideIndex += n);
+	}
+	else{
+  		showSlides(slideIndex += n);
+      scroll(0,0);
+	}
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+function FinishTutorialDialog() {
+
+    try {
+		Swal.fire({
+  			title: 'Parabéns, você concluiu o tutorial!',
+			icon: 'success',  
+			showDenyButton: true,
+			showCancelButton: true,
+			cancelButtonText: 'OK',
+			confirmButtonText: 'Método AHP-TOPSIS-2N',
+			denyButtonText: 'Página inicial',
+			confirmButtonColor: '#01346ec2',
+
+		}).then((result) => {
+			if (result.isConfirmed) {
+				window.location.href='/3DM/AHP_TOPSIS_2N.html';
+			} else if (result.isDenied) {
+				window.location.href='/3DM/index.html';
+			}
+		})
+    }
+    catch {
+        alert("Parabéns, você concluiu o tutorial!");
+    }
+}
+</script>
+
+</body>
+</html> 

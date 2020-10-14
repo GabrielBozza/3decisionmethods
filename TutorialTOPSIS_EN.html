@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang = "en">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<title>TOPSIS Tutorial</title>
+<link rel="icon" href="img/3dm_icon.ico" type="image/x-icon">
+<link rel="stylesheet" href="styleTutorials.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+
+  <script>
+    document.body.style.zoom = (window.screen.width/1536);
+  </script>
+
+  <div class="topnav">
+	  <button onclick="window.location.href='/3DM/index.html'" style="float:left;height:60px;font-size:25px;background-color:#01346ec2;"><i class="fa fa-fw fa-home"></i></button>
+    <h2 style="font-family:Raleway;color:white;float:left;margin-left:40%;">TOPSIS Tutorial</h2>
+    <img src="img/3dm-transparent.png" style="margin:5px 10px;width:70px;height:50px;border-radius:5px;border:1px solid white;float:right;">
+  </div>
+
+  <div id="TutorialBody">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 10</div>
+  	  	<text style="text-align:justify;font-size:20px;line-height:1.8;">
+    <br>● The TOPSIS method is indicated for:<br>
+    <div style="padding-left:5em">○ Cases with many alternatives and criteria, since there is no limitation on the number of these
+    fields.</div>
+    <div style="padding-left:5em">○ Cases whose criteria are only quantitative and monotonically increasing or decreasing.</div>
+    <i>Note: it is inappropriate for decision Methods under uncertainty.</i><br><br>
+    ● More about the TOPSIS Method:<br>
+    <div style="padding-left:5em">○ The TOPSIS algorithm (Technique for Order Preference by Similarity to Ideal Solution) was
+    developed by Hwang & Yoon (1981) and is a technique for evaluating the performance of
+    alternatives through its similarity with an ideal solution. According to this technique, the best
+    alternative is the one closest to the ideal solution and the furthest from the non-ideal solution.</div>
+    <div style="padding-left:5em">○ <a href="/3DM/References.html" style="color: #01346ec2;cursor:pointer;">Further reading material.</a></div>
+    ● Find an explanatory video on the TOPSIS method below
+    </text>
+    
+    <a href="https://www.youtube.com/watch?v=h5aL0M1HB38" target="_blank" style="width:100%;cursor:pointer;margin-left:240px;"><img src="img/thumbnail_ahp.png" style="width:50%;cursor:pointer;text-align:center;"></a>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 10</div>
+  	<img src="img/TOPSISEN1.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 10</div>
+  	<img src="img/TOPSISEN2.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 10</div>
+  	<img src="img/TOPSISEN3.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 12</div>
+  	<img src="img/TOPSISEN4.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 10</div>
+  	<img src="img/TOPSISEN5.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 10</div>
+  	<img src="img/TOPSISEN6.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 10</div>
+  	<img src="img/TOPSISEN7.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 10</div>
+  	<img src="img/TOPSISEN8.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">10 / 10</div>
+  	<img src="img/TOPSISEN9.png" style="width:100%">
+</div>
+
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span> 
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+scroll(0,0);
+
+function plusSlides(n) {
+  	if(slideIndex == 10 && n==1){
+		FinishTutorialDialog();
+		showSlides(slideIndex += n);
+	}
+	else{
+  		showSlides(slideIndex += n);
+      scroll(0,0);
+	}
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+function FinishTutorialDialog() {
+
+    try {
+		Swal.fire({
+  			title: 'Congratulations, you finished the tutorial!',
+			icon: 'success',  
+			showDenyButton: true,
+			showCancelButton: true,
+			cancelButtonText: 'OK',
+			confirmButtonText:'TOPSIS Method' ,
+			denyButtonText: 'Home Page',
+			confirmButtonColor: '#01346ec2',
+	
+		}).then((result) => {
+			if (result.isConfirmed) {
+				window.location.href='/3DM/TOPSIS.html';
+			} else if (result.isDenied) {
+				window.location.href='/3DM/index.html';
+			}
+		})
+    }
+    catch {
+        alert("Congratulations, you finished the tutorial!");
+    }
+}
+</script>
+
+</body>
+</html> 
